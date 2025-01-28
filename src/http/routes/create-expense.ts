@@ -18,12 +18,14 @@ export const createExpenseRoute: FastifyPluginAsyncZod = async app => {
     async request => {
       const { description, price, type, category } = request.body
 
-      await createExpense({
+      const { expense } = await createExpense({
         description,
         price,
         type,
         category,
       })
+
+      return expense
     }
   )
 }
