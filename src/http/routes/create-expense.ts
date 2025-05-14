@@ -1,5 +1,5 @@
-import { z } from 'zod'
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
+import { z } from 'zod'
 import { createExpense } from '../../functions/create-expense'
 
 export const createExpenseRoute: FastifyPluginAsyncZod = async app => {
@@ -9,7 +9,7 @@ export const createExpenseRoute: FastifyPluginAsyncZod = async app => {
       schema: {
         body: z.object({
           description: z.string(),
-          price: z.number().int(),
+          price: z.number().multipleOf(0.01),
           type: z.string(),
           category: z.string(),
         }),
