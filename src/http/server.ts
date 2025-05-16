@@ -21,7 +21,6 @@ app.setSerializerCompiler(serializerCompiler)
 
 app.register(createExpenseRoute)
 app.register(getExpenseRoute)
-// app.register(getSearchExpenseRoute)
 app.register(getSearchDateExpenseRoute)
 
 app
