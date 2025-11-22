@@ -1,6 +1,6 @@
-# Back-end
+# Expense Server
 
-Projeto **Back-end** desenvolvido com **Fastify**, **TypeScript**, **Drizzle ORM** e **PostgreSQL**, focado em uma estrutura moderna, segura e escalável para aplicações web.
+Projeto **Expense Server** desenvolvido com **Fastify**, **TypeScript**, **Drizzle ORM** e **PostgreSQL**, focado em uma estrutura moderna, segura e escalável para aplicações web.
 
 ---
 
